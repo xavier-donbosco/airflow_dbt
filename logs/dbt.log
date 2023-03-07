@@ -1,0 +1,247 @@
+
+
+============================== 2023-03-07 13:25:52.540939 | 72fec684-d3cf-4fbe-9a28-f8b9245d690d ==============================
+[0m13:25:52.540939 [info ] [MainThread]: Running with dbt=1.4.4
+[0m13:25:52.548954 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\XavierDonBosco\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m13:25:52.548954 [debug] [MainThread]: Tracking: tracking
+[0m13:25:52.564463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015736818F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157369D4410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157369D4550>]}
+[0m13:25:53.254428 [debug] [MainThread]: Executing "git --help"
+[0m13:25:53.287447 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:25:53.287447 [debug] [MainThread]: STDERR: "b''"
+[0m13:25:53.303460 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m13:25:53.303460 [debug] [MainThread]: Using databricks connection "debug"
+[0m13:25:53.303460 [debug] [MainThread]: On debug: select 1 as id
+[0m13:25:53.303460 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:26:01.579912 [debug] [MainThread]: SQL status: OK in 8.28 seconds
+[0m13:26:01.579912 [debug] [MainThread]: On debug: Close
+[0m13:26:03.217280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157477FC950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157468EE890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015746621B10>]}
+[0m13:26:03.218296 [debug] [MainThread]: Flushing usage events
+[0m13:26:04.692529 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-03-07 13:32:25.102606 | afc077c9-9d7f-4b12-b9af-00f0e72360ac ==============================
+[0m13:32:25.102606 [info ] [MainThread]: Running with dbt=1.4.4
+[0m13:32:25.102606 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\XavierDonBosco\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m13:32:25.102606 [debug] [MainThread]: Tracking: tracking
+[0m13:32:25.119425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002068FCAE990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690D4BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206800ADC50>]}
+[0m13:32:25.154749 [debug] [MainThread]: checksum: 170d819e8a7f11e09c497566dd7f61e1355cb9fb514921503937b951cb4a2250, vars: {}, profile: None, target: None, version: 1.4.4
+[0m13:32:25.154749 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:32:25.154749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'afc077c9-9d7f-4b12-b9af-00f0e72360ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002069092A290>]}
+[0m13:32:26.513867 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m13:32:26.515296 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m13:32:26.515296 [debug] [MainThread]: 1699: static parser successfully parsed leads\leads.sql
+[0m13:32:26.602237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'afc077c9-9d7f-4b12-b9af-00f0e72360ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690DA92D0>]}
+[0m13:32:26.611648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'afc077c9-9d7f-4b12-b9af-00f0e72360ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690F04190>]}
+[0m13:32:26.612729 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 372 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m13:32:26.612729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'afc077c9-9d7f-4b12-b9af-00f0e72360ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690D6C450>]}
+[0m13:32:26.612729 [info ] [MainThread]: 
+[0m13:32:26.617236 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:32:26.617236 [debug] [ThreadPool]: Acquiring new databricks connection 'list_schemas'
+[0m13:32:26.617236 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+[0m13:32:26.617236 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.4.4", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.0", "profile_name": "airflow_test", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m13:32:26.617236 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:32:29.688030 [debug] [ThreadPool]: SQL status: OK in 3.07 seconds
+[0m13:32:29.703503 [debug] [ThreadPool]: On list_schemas: Close
+[0m13:32:30.862766 [debug] [ThreadPool]: Acquiring new databricks connection 'list_schemas'
+[0m13:32:30.865964 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+[0m13:32:30.865964 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.4.4", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.0", "profile_name": "airflow_test", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m13:32:30.865964 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:32:33.867217 [debug] [ThreadPool]: SQL status: OK in 3.0 seconds
+[0m13:32:33.867217 [debug] [ThreadPool]: On list_schemas: Close
+[0m13:32:34.831000 [debug] [ThreadPool]: Acquiring new databricks connection 'create__default_airflow'
+[0m13:32:34.833044 [debug] [ThreadPool]: Acquiring new databricks connection 'create__default_airflow'
+[0m13:32:34.833044 [debug] [ThreadPool]: Creating schema "ReferenceKeyMsg(database=None, schema='default_airflow', identifier=None)"
+[0m13:32:34.833044 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m13:32:34.833044 [debug] [ThreadPool]: Using databricks connection "create__default_airflow"
+[0m13:32:34.838554 [debug] [ThreadPool]: On create__default_airflow: /* {"app": "dbt", "dbt_version": "1.4.4", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.0", "profile_name": "airflow_test", "target_name": "dev", "connection_name": "create__default_airflow"} */
+create schema if not exists `default_airflow`
+  
+[0m13:32:34.838554 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:32:37.831018 [debug] [ThreadPool]: SQL status: OK in 2.99 seconds
+[0m13:32:37.831018 [debug] [ThreadPool]: Spark adapter: NotImplemented: commit
+[0m13:32:37.846513 [debug] [ThreadPool]: On create__default_airflow: ROLLBACK
+[0m13:32:37.846513 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m13:32:37.848874 [debug] [ThreadPool]: On create__default_airflow: Close
+[0m13:32:38.855144 [debug] [ThreadPool]: Acquiring new databricks connection 'list_None_default'
+[0m13:32:38.869148 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m13:32:38.869148 [debug] [ThreadPool]: Using databricks connection "list_None_default"
+[0m13:32:38.869148 [debug] [ThreadPool]: On list_None_default: /* {"app": "dbt", "dbt_version": "1.4.4", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.0", "profile_name": "airflow_test", "target_name": "dev", "connection_name": "list_None_default"} */
+show tables in `default`
+  
+[0m13:32:38.869148 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:32:41.049013 [debug] [ThreadPool]: SQL status: OK in 2.18 seconds
+[0m13:32:41.049013 [debug] [ThreadPool]: On list_None_default: ROLLBACK
+[0m13:32:41.059046 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m13:32:41.059719 [debug] [ThreadPool]: On list_None_default: Close
+[0m13:32:42.059743 [debug] [ThreadPool]: Acquiring new databricks connection 'list_None_default_airflow'
+[0m13:32:42.059743 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m13:32:42.075408 [debug] [ThreadPool]: Using databricks connection "list_None_default_airflow"
+[0m13:32:42.075408 [debug] [ThreadPool]: On list_None_default_airflow: /* {"app": "dbt", "dbt_version": "1.4.4", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.0", "profile_name": "airflow_test", "target_name": "dev", "connection_name": "list_None_default_airflow"} */
+show tables in `default_airflow`
+  
+[0m13:32:42.076471 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:32:44.211362 [debug] [ThreadPool]: SQL status: OK in 2.13 seconds
+[0m13:32:44.227040 [debug] [ThreadPool]: On list_None_default_airflow: ROLLBACK
+[0m13:32:44.227040 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m13:32:44.227040 [debug] [ThreadPool]: On list_None_default_airflow: Close
+[0m13:32:45.370252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'afc077c9-9d7f-4b12-b9af-00f0e72360ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690D707D0>]}
+[0m13:32:45.370252 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:32:45.380478 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:32:45.382794 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:32:45.382794 [info ] [MainThread]: 
+[0m13:32:45.480168 [debug] [Thread-1 (]: Began running node model.airflow_test.leads
+[0m13:32:45.480168 [info ] [Thread-1 (]: 1 of 3 START sql table model default_airflow.leads ............................. [RUN]
+[0m13:32:45.480168 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.airflow_test.leads'
+[0m13:32:45.480168 [debug] [Thread-1 (]: Began compiling node model.airflow_test.leads
+[0m13:32:45.480168 [debug] [Thread-1 (]: Writing injected SQL for node "model.airflow_test.leads"
+[0m13:32:45.495879 [debug] [Thread-1 (]: Timing info for model.airflow_test.leads (compile): 2023-03-07 13:32:45.480168 => 2023-03-07 13:32:45.495879
+[0m13:32:45.495879 [debug] [Thread-1 (]: Began executing node model.airflow_test.leads
+[0m13:32:45.583138 [debug] [Thread-1 (]: Writing runtime sql for node "model.airflow_test.leads"
+[0m13:32:45.583138 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:32:45.583138 [debug] [Thread-1 (]: Using databricks connection "model.airflow_test.leads"
+[0m13:32:45.583138 [debug] [Thread-1 (]: On model.airflow_test.leads: /* {"app": "dbt", "dbt_version": "1.4.4", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.0", "profile_name": "airflow_test", "target_name": "dev", "node_id": "model.airflow_test.leads"} */
+
+  
+    
+        create or replace table `default_airflow`.`leads`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      
+select AccountCity, AccountCountry, AccountCountryText, AccountPartyID, AccountPartyName, AccountPostalAddressElementsStreetName, AccountState, AccountStateText, Company from airflow.leads_bronze
+  
+[0m13:32:45.583138 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:33:16.595972 [debug] [Thread-1 (]: SQL status: OK in 31.01 seconds
+[0m13:33:17.583578 [debug] [Thread-1 (]: Timing info for model.airflow_test.leads (execute): 2023-03-07 13:32:45.495879 => 2023-03-07 13:33:17.583578
+[0m13:33:17.583578 [debug] [Thread-1 (]: On model.airflow_test.leads: ROLLBACK
+[0m13:33:17.583578 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:33:17.583578 [debug] [Thread-1 (]: On model.airflow_test.leads: Close
+[0m13:33:18.635797 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'afc077c9-9d7f-4b12-b9af-00f0e72360ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690F37F50>]}
+[0m13:33:18.635797 [info ] [Thread-1 (]: 1 of 3 OK created sql table model default_airflow.leads ........................ [[32mOK[0m in 33.16s]
+[0m13:33:18.639832 [debug] [Thread-1 (]: Finished running node model.airflow_test.leads
+[0m13:33:18.639832 [debug] [Thread-1 (]: Began running node model.airflow_test.my_first_dbt_model
+[0m13:33:18.639832 [info ] [Thread-1 (]: 2 of 3 START sql table model default.my_first_dbt_model ........................ [RUN]
+[0m13:33:18.642200 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.airflow_test.my_first_dbt_model'
+[0m13:33:18.642200 [debug] [Thread-1 (]: Began compiling node model.airflow_test.my_first_dbt_model
+[0m13:33:18.642200 [debug] [Thread-1 (]: Writing injected SQL for node "model.airflow_test.my_first_dbt_model"
+[0m13:33:18.642200 [debug] [Thread-1 (]: Timing info for model.airflow_test.my_first_dbt_model (compile): 2023-03-07 13:33:18.642200 => 2023-03-07 13:33:18.642200
+[0m13:33:18.647693 [debug] [Thread-1 (]: Began executing node model.airflow_test.my_first_dbt_model
+[0m13:33:18.648344 [debug] [Thread-1 (]: Writing runtime sql for node "model.airflow_test.my_first_dbt_model"
+[0m13:33:18.648344 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:33:18.654392 [debug] [Thread-1 (]: Using databricks connection "model.airflow_test.my_first_dbt_model"
+[0m13:33:18.654392 [debug] [Thread-1 (]: On model.airflow_test.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.4", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.0", "profile_name": "airflow_test", "target_name": "dev", "node_id": "model.airflow_test.my_first_dbt_model"} */
+
+  
+    
+        create or replace table `default`.`my_first_dbt_model`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  
+[0m13:33:18.655400 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:33:25.394646 [debug] [Thread-1 (]: SQL status: OK in 6.74 seconds
+[0m13:33:25.400002 [debug] [Thread-1 (]: Timing info for model.airflow_test.my_first_dbt_model (execute): 2023-03-07 13:33:18.648344 => 2023-03-07 13:33:25.400002
+[0m13:33:25.400002 [debug] [Thread-1 (]: On model.airflow_test.my_first_dbt_model: ROLLBACK
+[0m13:33:25.400002 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:33:25.400002 [debug] [Thread-1 (]: On model.airflow_test.my_first_dbt_model: Close
+[0m13:33:26.428970 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'afc077c9-9d7f-4b12-b9af-00f0e72360ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690F760D0>]}
+[0m13:33:26.428970 [info ] [Thread-1 (]: 2 of 3 OK created sql table model default.my_first_dbt_model ................... [[32mOK[0m in 7.79s]
+[0m13:33:26.428970 [debug] [Thread-1 (]: Finished running node model.airflow_test.my_first_dbt_model
+[0m13:33:26.438163 [debug] [Thread-1 (]: Began running node model.airflow_test.my_second_dbt_model
+[0m13:33:26.438163 [info ] [Thread-1 (]: 3 of 3 START sql view model default.my_second_dbt_model ........................ [RUN]
+[0m13:33:26.443498 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.airflow_test.my_second_dbt_model'
+[0m13:33:26.443498 [debug] [Thread-1 (]: Began compiling node model.airflow_test.my_second_dbt_model
+[0m13:33:26.443498 [debug] [Thread-1 (]: Writing injected SQL for node "model.airflow_test.my_second_dbt_model"
+[0m13:33:26.443498 [debug] [Thread-1 (]: Timing info for model.airflow_test.my_second_dbt_model (compile): 2023-03-07 13:33:26.443498 => 2023-03-07 13:33:26.443498
+[0m13:33:26.443498 [debug] [Thread-1 (]: Began executing node model.airflow_test.my_second_dbt_model
+[0m13:33:26.475196 [debug] [Thread-1 (]: Writing runtime sql for node "model.airflow_test.my_second_dbt_model"
+[0m13:33:26.475196 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:33:26.475196 [debug] [Thread-1 (]: Using databricks connection "model.airflow_test.my_second_dbt_model"
+[0m13:33:26.490854 [debug] [Thread-1 (]: On model.airflow_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.4", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.0", "profile_name": "airflow_test", "target_name": "dev", "node_id": "model.airflow_test.my_second_dbt_model"} */
+create or replace view `default`.`my_second_dbt_model`
+  
+  
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from `default`.`my_first_dbt_model`
+where id = 1
+
+[0m13:33:26.490854 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:33:29.230412 [debug] [Thread-1 (]: SQL status: OK in 2.74 seconds
+[0m13:33:29.246063 [debug] [Thread-1 (]: Timing info for model.airflow_test.my_second_dbt_model (execute): 2023-03-07 13:33:26.443498 => 2023-03-07 13:33:29.246063
+[0m13:33:29.246063 [debug] [Thread-1 (]: On model.airflow_test.my_second_dbt_model: ROLLBACK
+[0m13:33:29.246063 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:33:29.246063 [debug] [Thread-1 (]: On model.airflow_test.my_second_dbt_model: Close
+[0m13:33:30.308336 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'afc077c9-9d7f-4b12-b9af-00f0e72360ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690F86D10>]}
+[0m13:33:30.308336 [info ] [Thread-1 (]: 3 of 3 OK created sql view model default.my_second_dbt_model ................... [[32mOK[0m in 3.87s]
+[0m13:33:30.314322 [debug] [Thread-1 (]: Finished running node model.airflow_test.my_second_dbt_model
+[0m13:33:30.317286 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:33:30.317286 [debug] [MainThread]: On master: ROLLBACK
+[0m13:33:30.317286 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:33:31.408122 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:33:31.408122 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:33:31.413039 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:33:31.413039 [debug] [MainThread]: On master: ROLLBACK
+[0m13:33:31.413737 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:33:31.413737 [debug] [MainThread]: On master: Close
+[0m13:33:32.784308 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:33:32.784308 [debug] [MainThread]: Connection 'create__default_airflow' was properly closed.
+[0m13:33:32.784308 [debug] [MainThread]: Connection 'list_None_default_airflow' was properly closed.
+[0m13:33:32.784308 [debug] [MainThread]: Connection 'model.airflow_test.my_second_dbt_model' was properly closed.
+[0m13:33:32.784308 [info ] [MainThread]: 
+[0m13:33:32.784308 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 1 minutes and 6.17 seconds (66.17s).
+[0m13:33:32.784308 [debug] [MainThread]: Command end result
+[0m13:33:32.805117 [info ] [MainThread]: 
+[0m13:33:32.805665 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:33:32.805665 [info ] [MainThread]: 
+[0m13:33:32.805665 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m13:33:32.809734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690661A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690F3FF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690F3FF10>]}
+[0m13:33:32.809734 [debug] [MainThread]: Flushing usage events
